@@ -1,0 +1,625 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\MyWebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyWebsite.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\DanhMuc\\android.webp",
+      "PackagePath": "staticwebassets\\Images\\DanhMuc\\android.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\DanhMuc\\iphone.png",
+      "PackagePath": "staticwebassets\\Images\\DanhMuc\\iphone.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\DanhMuc\\redmi.svg",
+      "PackagePath": "staticwebassets\\Images\\DanhMuc\\redmi.svg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\DanhMuc\\xiaomi.png",
+      "PackagePath": "staticwebassets\\Images\\DanhMuc\\xiaomi.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\PHONE.png",
+      "PackagePath": "staticwebassets\\Images\\PHONE.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\iphone1.webp",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\iphone1.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone1.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone1.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone10.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone10.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone11.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone11.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone12.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone12.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone14.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone14.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone15.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone15.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone16.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone16.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone2.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone2.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone3.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone3.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone4.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone4.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone5.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone5.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone6.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone6.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone7.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone7.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone8.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone8.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\phone9.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\phone9.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\SanPham\\redmi.jpg",
+      "PackagePath": "staticwebassets\\Images\\SanPham\\redmi.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\TaiKhoan\\taikhoan1.jpg",
+      "PackagePath": "staticwebassets\\Images\\TaiKhoan\\taikhoan1.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\background.jpg",
+      "PackagePath": "staticwebassets\\Images\\background.jpg"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\camerasau.png",
+      "PackagePath": "staticwebassets\\Images\\camerasau.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\cpu.png",
+      "PackagePath": "staticwebassets\\Images\\cpu.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\giamdan.png",
+      "PackagePath": "staticwebassets\\Images\\giamdan.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\lienhe\\Instagram.webp",
+      "PackagePath": "staticwebassets\\Images\\lienhe\\Instagram.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\lienhe\\facebook.webp",
+      "PackagePath": "staticwebassets\\Images\\lienhe\\facebook.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\lienhe\\telegram.webp",
+      "PackagePath": "staticwebassets\\Images\\lienhe\\telegram.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\lienhe\\zalo.png",
+      "PackagePath": "staticwebassets\\Images\\lienhe\\zalo.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\logophone.png",
+      "PackagePath": "staticwebassets\\Images\\logophone.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\new.png",
+      "PackagePath": "staticwebassets\\Images\\new.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\phone_1.png",
+      "PackagePath": "staticwebassets\\Images\\phone_1.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\ram.png",
+      "PackagePath": "staticwebassets\\Images\\ram.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\rom.png",
+      "PackagePath": "staticwebassets\\Images\\rom.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\selfie.png",
+      "PackagePath": "staticwebassets\\Images\\selfie.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\slideshow1.webp",
+      "PackagePath": "staticwebassets\\Images\\slideshow1.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\slideshow2.webp",
+      "PackagePath": "staticwebassets\\Images\\slideshow2.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\slideshow3.webp",
+      "PackagePath": "staticwebassets\\Images\\slideshow3.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\slideshow4.webp",
+      "PackagePath": "staticwebassets\\Images\\slideshow4.webp"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\Images\\tangdan.png",
+      "PackagePath": "staticwebassets\\Images\\tangdan.png"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\css\\trangchu.css",
+      "PackagePath": "staticwebassets\\css\\trangchu.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\angular.min.js",
+      "PackagePath": "staticwebassets\\js\\angular.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.MyWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.MyWebsite.props",
+      "PackagePath": "build\\MyWebsite.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MyWebsite.props",
+      "PackagePath": "buildMultiTargeting\\MyWebsite.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.MyWebsite.props",
+      "PackagePath": "buildTransitive\\MyWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

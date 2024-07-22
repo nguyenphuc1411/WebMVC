@@ -1,0 +1,101 @@
+.nav-link {
+    color: #666777;
+    font-weight: bold;
+    position: relative;
+}
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: #000;
+    }
+
+@media(min-width:991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: rgb(2, 105, 2);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* CSS nút */
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+    }
+/* css */
+.navbar {
+    background-color: #c8cbf5;
+    height: 80px;
+}
+
+.product-card {
+    transition: opacity 0.3s ease;
+}
+
+    .product-card:hover {
+        opacity: 0.9; /* Adjust opacity level as needed */
+    }
+
+.product-buttons {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    opacity: 0; /* Initially hide buttons */
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-buttons {
+    opacity: 1; /* Show buttons on hover */
+}
+
+.thongso li {
+    margin-bottom: 20px;
+}
+
+    .thongso li img {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+.giatien {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.mausac img {
+    height: 50px;
+    width: auto;
+}
+
+.danhgia_diem {
+    color: rgb(255, 0, 51);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bi-star-fill {
+    color: rgb(255, 230, 0);
+}
+
+
+
+

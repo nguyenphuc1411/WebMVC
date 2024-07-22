@@ -1,0 +1,115 @@
+﻿@model MyWebsite.ViewModels.LoginVM;
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Vendor CSS Files -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('@Url.Content("~/Images/background.jpg")');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <h1 class="text-white fw-bold">Welcome to PSHOP</h1>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+                                <a href="index.html" class="d-flex align-items-center w-auto text-decoration-none">
+                                    <img src="~/Images/logophone.png" alt="logo">
+                                    <h4 class="fw-bold">PSHOP</h4>
+                                </a>
+                            </div><!-- End Logo -->
+
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h3 class="card-title text-center pb-0 fs-4">Login to Your Account</h3>
+                                    </div>
+
+                                    <form class="row g-3" asp-action="Login" method="post">
+
+                                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                                        <div class="mt-2">
+                                            <label asp-for="Username" class="form-label"></label>
+                                            <input type="text" asp-for="Username" class="form-control">
+                                            <span class="text-danger" asp-validation-for="Username"></span>
+
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <label asp-for="Password" class="form-label"></label>
+                                            <input asp-for="Password" class="form-control">
+                                            <span class="text-danger" asp-validation-for="Password"></span>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" asp-for="RememberMe">
+                                                <label class="form-check-label" asp-for="RememberMe"></label>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <input class="btn btn-primary w-100" type="submit" value="Login"></input>
+                                        </div>
+                                        <div class="mt-2">
+                                            <p class="small mb-0">
+                                                Don't have account? <a asp-controller="Account" asp-action="Register">Create an account</a>
+                                            </p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="fw-bold text-white">
+                                Designed by ThanhPhuc
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main><!-- End #main -->
+
+
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/admin.js"></script>
+
+   
+
+</body>
+
+</html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+

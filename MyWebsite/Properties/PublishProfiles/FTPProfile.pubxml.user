@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADEL4X0W6JEWd1IMHthsEMAAAAAACAAAAAAAQZgAAAAEAACAAAABVdW52EgwmsGgeoUMmZcMggIMCnsY6GdRSo4iOpRBHbwAAAAAOgAAAAAIAACAAAAAwhDYCoAm5SeEGK8NRm0yyG6f9jgXlPL9sPzgGL3MFwiAAAADkHWLP9krERUlk5KMKFBeDDXxFu9RkziU4P5tZJZnsT0AAAAD5yDLAa/IAU41Kkh2vkiFdGezg9Zw/V23mLArAY6BwpcQiFe6fCUPfg0nyh9Swy2E3l3kS3J4i6izCFftfVHGf</EncryptedPassword>
+    <_PublishTargetUrl>ftp://anhaiqua.somee.com/www.anhaiqua.somee.com/ftp://155.254.244.40/www.anhaiqua.somee.com</_PublishTargetUrl>
+    <History>False|2024-06-22T09:04:32.0525854Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="MyDB">
+      <Value>workstation id=asm1411.mssql.somee.com%3bpacket size=4096%3buser id=phucnguyen1411_SQLLogin_1%3bpwd=ugqmvqorwl%3bdata source=asm1411.mssql.somee.com%3bpersist security info=False%3binitial catalog=asm1411%3bTrustServerCertificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="MyWebsite.Data.AppDbContext">
+      <Value>workstation id=asm1411.mssql.somee.com%3bpacket size=4096%3buser id=phucnguyen1411_SQLLogin_1%3bpwd=ugqmvqorwl%3bdata source=asm1411.mssql.somee.com%3bpersist security info=False%3binitial catalog=asm1411%3bTrustServerCertificate=True</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

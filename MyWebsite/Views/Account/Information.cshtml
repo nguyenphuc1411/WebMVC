@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model MyWebsite.ViewModels.UserVM
+
+<div class="container">
+
+    <div class="col-md-9 mx-auto p-3">
+        <h1 class="ms-5">Information</h1>
+        <form action="Edit" method="post">
+            <div class="row">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="ID" />
+                <div class="col-md-6">
+                    <label class="mb-1" asp-for="Name"></label>
+                    <input readonly asp-for=Name type="text" class="form-control mb-3 rounded-5" value="@Model.Name">
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Email" class="mb-1"></label>
+                    <input readonly asp-for=Email type="email" class="form-control mb-3 rounded-5" value="@Model.Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="mb-1" asp-for="PhoneNumber"></label>
+                    <input readonly asp-for="PhoneNumber" type="text" class="form-control mb-3 rounded-5" value="@Model.PhoneNumber">
+
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Address" class="mb-1"></label>
+                    <input readonly asp-for="Address" type="text" class="form-control mb-3 rounded-5" value="@Model.Address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="CreatedDate" class="mb-1"></label>
+                    <input asp-for="CreatedDate" readonly type="datetime" class="form-control mb-3 rounded-5" value="@Model.CreatedDate">
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <label asp-for="ImageUser" class="mb-1"></label>
+                            <input id="readonlyInput" asp-for="ImageUser" type="hidden"  class="form-control mb-3 rounded-5" value="@Model.ImageUser">
+                            <img id="hinhanh" class="rounded-4 ms-4" src="~/Images/TaiKhoan/@Model.ImageUser" style="height:90px;" />
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="mb-1">Old Password</label>
+                    <input value="" readonly asp-for="Password" type="text" class="form-control mb-3 rounded-5">
+
+                </div>
+                <div class="col-md-6">
+                    <label class="mb-1">New Password</label>
+                    <input readonly asp-for="NewPassword" type="text" class="form-control mb-3 rounded-5" value="@Model.NewPassword">
+                </div>
+            </div>
+                <div class="col-md-6 d-flex justify-content-between">
+                    <a asp-action="Edit"  class="btn btn-warning fw-bold rounded-5 mt-3 form-control">Edit</a>
+                    <input type="submit" class="btn btn-primary form-control fw-bold rounded-5 mt-3" value="Update Infor" />
+            </div>    
+        </form>
+    </div>
+</div>

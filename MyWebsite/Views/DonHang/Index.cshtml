@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MyWebsite.Models.DonHang>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h1>Order List</h1>
+    <partial name="_notificationPartial"></partial>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>@Html.DisplayNameFor(model => model.DonHangId)</th>
+                <th>@Html.DisplayNameFor(model => model.SDT)</th>
+                <th>@Html.DisplayNameFor(model => model.DiaChiGiaoHang)</th>
+                <th>@Html.DisplayNameFor(model => model.ThoiGianDat)</th>
+                <th>@Html.DisplayNameFor(model => model.Note)</th>
+                <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                int index = 1; // Di chuyển khai báo của index ra khỏi vòng lặp
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@index</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DonHangId)
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.SDT)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DiaChiGiaoHang)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ThoiGianDat)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Note)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
+                        <td>
+                            <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.DonHangId">Edit</a> |
+                            <a class="btn btn-sm btn-warning" asp-action="Details" asp-route-id="@item.DonHangId">View Details</a> |
+                            <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.DonHangId">Delete</a>
+                        </td>
+                    </tr>
+                    index++; 
+                }
+            }
+        </tbody>
+
+    </table>
+</div>
+

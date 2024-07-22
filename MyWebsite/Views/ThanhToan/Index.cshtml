@@ -1,0 +1,84 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@inject  UserManager<AppUser> userManager;
+
+@{
+    var userID = userManager.GetUserId(User);
+    var userDN = await userManager.FindByIdAsync(userID!);
+}
+
+@model IEnumerable<MyWebsite.ViewModels.GioHangVM>
+
+<div class="container" style="width: 800px;position: relative">
+    <h1 class="text-center">Payment Information</h1>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            int giaGoc = item.SanPham!.Gia + item.SanPham.GiamGia * item.SanPham.Gia / 100;
+
+            <div class="row p-3 bg-white rounded-4">
+                <div class="col-3">
+                    <img src="~/Images/SanPham/@item.SanPham!.HinhAnh" style="height: 80px;" />
+                </div>
+                <div class="col-7">
+                    <p class="fw-bold text-primary">@item.SanPham.TenSanPham</p>
+                    <b class="fw-bold text-danger fs-5">@item.SanPham.Gia.ToString("#,##0") đ</b>
+                    <b class="text-secondary text-decoration-line-through">@giaGoc.ToString("#,##0") đ</b>
+                </div>
+                <div class="col-2">
+                    Quantity: <b class="text-danger">@item.SoLuong</b>
+                </div>
+            </div>
+        }
+    }
+    <h5 class="m-3"> Total: 
+            @if (ViewBag.Total != null)
+            {
+                <b class="fw-bold text-primary">@ViewBag.Total.ToString("#,##0")</b>
+            } đ
+    </h5>
+
+    <h5 class="fw-bold">CLIENT INFORMATION</h5>
+
+    <div class="row p-3 bg-white rounded-4">
+        <div class="row">
+            <div class="form-group col-6">
+                <label>Full Name</label>
+                <input value="@userDN!.Name" type="text" class="form-control" />
+            </div>
+            <div class="form-group col-6">
+                <label>Email Address</label>
+                <input value="@userDN.Email" type="text" class="form-control" />
+            </div>
+        </div> 
+    </div>
+
+    <h5 class="fw-bold">RECEIVING INFORMATION</h5>
+
+    <form asp-controller="ThanhToan" asp-action="DatHang" method="post" class="row p-3 bg-white rounded-4">
+        <input name="NguoiDungId" value="@userDN.Id" type="hidden" />
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input name="sdt" value="@userDN.PhoneNumber" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Address:</label>
+            <textarea name="diaChiGiaoHang" placeholder="Enter address details for delivery" rows="3" type="text" class="form-control"></textarea>
+        </div>
+       
+        <div class="form-group">
+            <label>Note:</label>
+            <input name="note" placeholder="Enter the notes" type="text" class="form-control" />
+        </div>
+
+        <input type="submit" value="Order" class="btn btn-primary mt-4"/>
+    </form>
+</div>
+
+

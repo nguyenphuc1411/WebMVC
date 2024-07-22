@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MyWebsite.ViewModels.GioHangVM>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="width: 800px;position: relative">
+
+    <h4 class="text-center text-primary fw-bold pt-2">Your cart</h4>
+    <hr />
+
+    <partial name="_notificationPartial"></partial>
+
+    <div class="mt-3 d-flex justify-content-between">
+        <a class="fw-bold" class="btn btn-danger" asp-controller="GioHang" asp-controller="Home" asp-action="DeleteAll">Delete All</a>
+        <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Continue Shopping</a>
+    </div>
+    <div class="mt-3 mx-auto ">
+        <div class="container">
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <div class="card mt-2">
+                        <div class="row">
+                            <div class="col-4 d-flex p-2">
+                                <img class="ms-3" src="~/Images/SanPham/@item.SanPham!.HinhAnh" style="height:100px" />
+                            </div>
+                            <div class="col-6 mt-3">
+                                <p class="fw-bold">@item.SanPham.TenSanPham</p>
+
+                                <p class="fw-bold text-primary">@item.SanPham.Gia.ToString("#,###") đ</p>
+                            </div>
+                            <div class="col-2 mt-2">
+                                <a asp-controller="GioHang" asp-action="Remove" asp-route-SanPhamId="@item.SanPham.SanPhamId"><i class="bi bi-trash-fill fa-2x"></i></a>
+                                <div>
+                                    <a asp-action="Giam" asp-route-SanPhamId="@item.SanPham.SanPhamId" class="btn btn-sm btn-secondary fw-bold">-</a>
+
+                                    <label class="fw-bold text-danger mx-2">@item.SoLuong</label>
+
+                                    <a asp-action="Tang" asp-route-SanPhamId="@item.SanPham.SanPhamId" class="btn btn-sm btn-secondary fw-bold">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <h5>There are no products in the cart</h5>
+            }
+            
+        </div>
+    </div>
+
+    <div class="rounded-2" style="position:fixed;bottom:0;height: 100px;width:800px; background-color:whitesmoke;">
+        <div class="d-flex justify-content-between p-3 mb-5">
+            <div>
+                <h4>Total</h4>
+                <b class="fw-bold text-danger">@ViewBag.Total.ToString("#,##0") đ</b>
+            </div>
+            <a class="btn btn-danger m-2" asp-controller="ThanhToan" asp-action="Index"><i class="bi bi-credit-card-fill"></i> Pay</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MyWebsite.Models.DanhMuc>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Index</h1>
+<partial name="_notificationPartial"></partial>
+
+<div class="d-flex justify-content-sm-between">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+
+    <partial name="_searchResultPartial"></partial>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Serial</th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenDanhMuc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HinhAnh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int index = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenDanhMuc)
+                </td>
+                <td>
+                    <img src="~/Images/DanhMuc/@item.HinhAnh" style="height:40px;" />
+                </td>
+                <td>
+                    @if (item.TrangThai)
+                    {
+                        <span class="text-success fw-bold"><i class="bi bi-circle-fill text-success"></i> Active</span>
+                    }
+                    else
+                    {
+                        <span class="text-danger fw-bold"><i class="bi bi-circle-fill text-danger"></i> InActive</span>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.DanhMucId">Edit</a> |
+
+                    <button type="button" class="btn btn-sm btn-danger"
+                            data-bs-toggle="modal" data-bs-target="#modal-@item.DanhMucId">
+                        Delete
+                    </button>
+
+
+                    <div class="modal fade" id="modal-@item.DanhMucId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header row">
+                                    <h1 class="modal-title fs-5 col-9" id="exampleModalLabel">@item.TenDanhMuc</h1>
+                                    <img class="col-2" src="~/Images/DanhMuc/@item.HinhAnh" style="height:40px;" />
+                                    <button type="button" class="btn-close col-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="text-danger">
+                                        <b class="text-warning">All products in this category will be deleted!!</b>
+                                        <br />
+                                        Are you sure delete this Category?
+                                    </h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <a asp-action="Delete" asp-route-id="@item.DanhMucId" class="btn btn-primary">Delete Confirm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            index++;
+    }
+    </tbody>
+</table>

@@ -1,0 +1,160 @@
+﻿@model MyWebsite.Models.SanPham
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>SanPham</h4>
+<hr />
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SanPhamId" />
+            <div class="row">
+                <div class="form-group col-md-6 col-md-6 col-md-6">
+                    <label asp-for="TenSanPham" class="control-label"></label>
+                    <input asp-for="TenSanPham" class="form-control" />
+                    <span asp-validation-for="TenSanPham" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6 col-md-6 col-md-6">
+                    <label asp-for="Gia" class="control-label"></label>
+                    <input asp-for="Gia" class="form-control" />
+                    <span asp-validation-for="Gia" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6 col-md-6">
+                    <label asp-for="GiamGia" class="control-label"></label>
+                    <input asp-for="GiamGia" class="form-control" min="0" max="100" />
+                    <span asp-validation-for="GiamGia" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="ManHinh" class="control-label"></label>
+                    <input asp-for="ManHinh" class="form-control" />
+                    <span asp-validation-for="ManHinh" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="CameraSau" class="control-label"></label>
+                    <input asp-for="CameraSau" class="form-control" />
+                    <span asp-validation-for="CameraSau" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="CameraSelfie" class="control-label"></label>
+                    <input asp-for="CameraSelfie" class="form-control" />
+                    <span asp-validation-for="CameraSelfie" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="CPU" class="control-label"></label>
+                    <input asp-for="CPU" class="form-control" />
+                    <span asp-validation-for="CPU" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="GPU" class="control-label"></label>
+                    <input asp-for="GPU" class="form-control" />
+                    <span asp-validation-for="GPU" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PIN" class="control-label"></label>
+                    <input asp-for="PIN" class="form-control" />
+                    <span asp-validation-for="PIN" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="RAM" class="control-label"></label>
+                    <input asp-for="RAM" class="form-control" min="0" />
+                    <span asp-validation-for="RAM" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="ROM" class="control-label"></label>
+                    <input asp-for="ROM" class="form-control" />
+                    <span asp-validation-for="ROM" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="HDH" class="control-label"></label>
+                    <input asp-for="HDH" class="form-control" />
+                    <span asp-validation-for="HDH" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="XuatXu" class="control-label"></label>
+                    <input asp-for="XuatXu" class="form-control" />
+                    <span asp-validation-for="XuatXu" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label asp-for="HinhAnh" class="control-label"></label>
+                            <input id="readonlyInput" asp-for="HinhAnh" type="hidden" class="form-control" readonly />
+                            <span asp-validation-for="HinhAnh" class="text-danger"></span>
+                            <img id="hinhanh" src="~/Images/SanPham/@Model.HinhAnh"  style="height:80px;"/>
+                        </div>
+                        <div class="col-8">
+                            <label class="control-label">Change Image</label>
+                            <input onchange="ThayDoiHinh()" type="file" asp-for="HinhAnh" class="form-control" />
+                            <span asp-validation-for="HinhAnh" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Kho" class="control-label"></label>
+                        <input asp-for="Kho" class="form-control" />
+                        <span asp-validation-for="Kho" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DanhMucId" class="control-label"></label>
+                        <select asp-for="DanhMucId" class="form-select" asp-items="ViewBag.DanhMucId">
+                            <option value="" selected>Select Categoty</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="MoTa" class="control-label"></label>
+                    <textarea rows="3" asp-for="MoTa" class="form-control"></textarea>
+                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group mt-5 text-center">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    function ThayDoiHinh() {
+        var input = document.querySelector('input[type="file"]');
+        var fileName = input.files[0].name;
+        document.getElementById('readonlyInput').value = fileName;
+        var hinh = document.getElementById('hinhanh');
+        hinh.src = "/Images/SanPham/" + fileName;
+    }
+</script>
+

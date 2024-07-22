@@ -1,0 +1,31 @@
+﻿@{
+    if (TempData["CreateMessage"] != null)
+    {
+        <div class="alert alert-success d-flex justify-content-between ms-3 me-3">
+            @TempData["CreateMessage"]
+            <button type="button" class="btn btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    else
+    {
+        if (TempData["EditMessage"] != null)
+        {
+            <div class="alert alert-warning d-flex justify-content-between ms-3 me-3">
+                @TempData["EditMessage"]
+                <button type="button" class="btn btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+        else
+        {
+            if (TempData["DeleteMessage"] != null)
+            {
+                <div class="alert alert-danger d-flex justify-content-between ms-3 me-3">
+                    @TempData["DeleteMessage"]
+                    <button type="button" class="btn btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+        }
+    }
+
+}

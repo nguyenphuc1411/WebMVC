@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<AppUser> signInManager;
+
+<div class="dropdown">
+
+    @if (signInManager.IsSignedIn(User))
+    {
+        if (User.IsInRole("Admin"))
+        {
+            <button class="btn dropdown-toggle fw-bold text-decoration-none nav-link" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                <i class="fa-solid fa-user"></i>Admin   @User.Identity!.Name
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a asp-area="" asp-controller="Account" asp-action="Information"
+                       class="dropdown-item fw-bold"><i class="fa-solid fa-circle-info"></i> @User.Identity!.Name </a>
+                </li>
+                <li>
+                    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item fw-bold"><i class="bi bi-speedometer"></i> AdminDashboard</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="DonHang" asp-action="Index"
+                       class="dropdown-item fw-bold"><i class="fa-solid fa-cart-shopping"></i> Order</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"
+                       class="dropdown-item fw-bold"><i class="bi bi-house-add"></i> Go to Home</a>
+                </li>
+                <li>
+                    <a class="dropdown-item fw-bold"><i class="fa-solid fa-gear"></i> Setting</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a asp-area="" asp-controller="Account" asp-action="Logout" class="dropdown-item fw-bold"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        }
+        else
+        {
+            if (User.IsInRole("Client"))
+            {
+                <button class="btn dropdown-toggle fw-bold text-decoration-none nav-link" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>Client @User.Identity!.Name
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Information"
+                           class="dropdown-item fw-bold"><i class="fa-solid fa-circle-info"></i> @User.Identity!.Name </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Account" asp-action="Cart"
+                           class="dropdown-item fw-bold"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    </li>
+                    <li>
+                        <a asp-controller="DonHang" asp-action="Index"
+                           class="dropdown-item fw-bold"><i class="fa-solid fa-cart-shopping"></i> Order</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item fw-bold"><i class="fa-solid fa-gear"></i> Setting</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a asp-controller="Account" asp-action="Logout" class="dropdown-item fw-bold"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            }
+        }      
+    }
+    else
+    {
+        <button class="btn dropdown-toggle fw-bold text-decoration-none nav-link" data-bs-toggle="dropdown"
+                aria-expanded="false">
+            <i class="fa-solid fa-user"></i> Account
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a asp-controller="Account" asp-action="Login"
+                   class="dropdown-item fw-bold"><i class="bi bi-box-arrow-in-left"></i> Login</a>
+            </li>
+            <li>
+                <a asp-controller="Account" asp-action="Register"
+                   class="dropdown-item fw-bold"><i class="bi bi-r-circle-fill"></i> Register</a>
+            </li>
+        </ul>
+    }
+
+</div>

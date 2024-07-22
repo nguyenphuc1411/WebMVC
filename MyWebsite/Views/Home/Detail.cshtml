@@ -1,0 +1,310 @@
+﻿@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MyWebsite.Models.SanPham
+<div class="container">
+    <nav class="mt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a class="fw-bold text-black text-decoration-none" asp-controller="Home"
+                   asp-action="Index"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="fw-bold text-black text-decoration-none"
+                   asp-controller="DanhMucs" asp-action="Index">Quản lí danh mục</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="fw-bold text-decoration-none" asp-controller="DanhMucs"
+                   asp-action="Create">Tạo mới</a>
+            </li>
+        </ol>
+    </nav>
+
+
+    <div class="row">
+        <h3>@Model.TenSanPham</h3>
+        <hr>
+        <div class="col-lg-6 col-12">
+            <div class="d-flex justify-content-center p-3">
+                <img src="~/Images/SanPham/@Model.HinhAnh" alt="">
+            </div>
+            <div class="d-flex justify-content-evenly mt-3">
+                <img class="img-thumbnail" src="~/Images/SanPham/@Model.HinhAnh" alt="">
+                <img class="img-thumbnail" src="~/Images/SanPham/@Model.HinhAnh" alt="">
+                <img class="img-thumbnail" src="~/Images/SanPham/@Model.HinhAnh" alt="">
+            </div>
+            <div class="card mt-3">
+                <div class="card-header">Nhận khuyến mãi đặc biết</div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Giảm ngay 4,300,000đ khi mua màu Titan Xanh áp dụng đến 31/03
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Trả góp 0%
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Giảm thêm 200,000đ khi mua trả góp qua FE CREDIT
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Thu cũ đổi mới Chợ Tốt - Giảm 1,700,000đ khi thu cũ iPhone qua Chợ Tốt. Giảm
+                            thêm 300,000đ khi trả góp qua nhà tài chính
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Giá sốc bảo hành rơi vỡ 6 tháng giá chỉ 999.000đ
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            Tặng PMH 40,000đ khi mua sim 4G FPT FLEX69 1T kèm máy (Data 4GB/ngày)
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="container">
+                <b class="giatien">@Model.Gia.ToString("#,###")  đ</b><span class="ms-4">| <i class="fa-solid fa-truck-fast"></i>Free shipping nationwide</span>
+
+                <h5>Specifications</h5>
+                <div class="card p-3 thongso">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>Screen</b> <img src="~/Images/phone_1.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.ManHinh inch
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>Camera</b> <img src="~/Images/camerasau.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.CameraSau
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>Camera Selfie</b> <img src="~/Images/selfie.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.CameraSelfie
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>CPU</b> <img src="~/Images/cpu.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.CPU
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>ROM</b> <img src="~/Images/rom.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.ROM GB
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>RAM</b> <img src="~/Images/rom.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.RAM GB
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-4">
+                                    <b>PIN</b> <img src="~/Images/rom.png" alt="">:
+                                </div>
+                                <div class="col-8">
+                                    @Model.PIN mAh
+                                </div>
+                            </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <h5>Bảo hành lên đến 2 năm</h5>
+                </div>
+                <div class="mt-3">
+                    <a asp-controller="GioHang" asp-action="ThemVaoGio" asp-route-SanPhamId="@Model.SanPhamId" class="btn btn-primary fw-bold form-control">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h5>Product Description</h5>
+
+    <p>@Model.MoTa</p>
+
+
+    <div class="card danhgia">
+        <div class="card-header">
+            <h4>Evaluate</h4>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <p>Average Rating</p>
+                    <p class="danhgia_diem">4/5</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span>(45 rating)</span>
+                </div>
+                <div>
+                    <p>Are you use this product?</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal">
+                        Rating
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            Sorted By: <button class="btn btn-outline-dark">All</button>
+            <button class="btn btn-outline-dark">1  <i class="bi bi-star-fill"></i></button>
+            <button class="btn btn-outline-dark">2<i class="bi bi-star-fill"></i></button>
+            <button class="btn btn-outline-dark">3<i class="bi bi-star-fill"></i></button>
+            <button class="btn btn-outline-dark">4 <i class="bi bi-star-fill"></i></button>
+            <button class="btn btn-outline-dark">5 <i class="bi bi-star-fill"></i></button>
+            @if (ViewBag.DanhGia != null)
+            {
+                foreach (var dg in ViewBag.DanhGia)
+                {
+                    <div class="d-flex mt-3">
+                        <div class="bg-secondary text-center fw-bold fs-2 rounded-circle me-3" style="height: 50px; width: 50px;color: white;">
+                            TP 
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <b>@dg.NguoiDungId</b> 
+                                <span>@dg.ThoiGian</span>
+                            </div>
+                            <span>@dg.NoiDung</span> 
+                            <div>
+                                @for (int i = 0; i < dg.SoSao; i++)
+                                {
+                                    <i class="bi bi-star-fill .highlighted"></i>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form asp-controller="Home" asp-action="Detail" method="post">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Review Detail</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                    <img src="Images/SanPham/Iphone/iphone1.webp" alt="">
+                    <input type="hidden" name="SanPhamId" value="@Model.SanPhamId" />
+                    <h5>Iphone 15 promax 256 GB</h5>
+                    <div class="rating">
+                        <i class="bi bi-star-fill fa-2x"  onclick="setRating(1)"></i>
+                        <i class="bi bi-star-fill fa-2x"  onclick="setRating(2)"></i>
+                        <i class="bi bi-star-fill fa-2x"  onclick="setRating(3)"></i>
+                        <i class="bi bi-star-fill fa-2x"  onclick="setRating(4)"></i>
+                        <i class="bi bi-star-fill fa-2x"  onclick="setRating(5)"></i>
+                        <input type="hidden" name="SoSao" id="ratingValue" />
+                    </div>
+                    <textarea class="p-3 mt-3 form-control" name="Comment" id="" cols="50" rows="3"
+                              placeholder="Please write your comments!"></textarea>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <input type="submit" class="btn btn-danger" value="Submit Review">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .img-thumbnail {
+        height: 80px;
+    }
+    .fa-2x{
+        color:gray;
+    }
+    .highlighted {
+        color: yellow;
+    }
+</style>
+<script>
+
+    function setRating(rating) {
+        var ratingInput = document.getElementById('ratingValue');
+        ratingInput.value = rating;
+        var stars = document.querySelectorAll('.fa-2x');
+        stars.forEach(function (star, index) {
+            if (index < rating) {
+                star.classList.add('highlighted');
+            } else {
+                star.classList.remove('highlighted');
+            }
+        });
+    }
+
+</script>

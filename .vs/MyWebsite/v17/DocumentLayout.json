@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90FD4923-F1C1-46C2-A74F-7970A39101DD}|MyWebsite\\MyWebsite.csproj|d:\\hoctap\\c#4\\14_ps35026_nguyenthanhphuc_asm\\mywebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90FD4923-F1C1-46C2-A74F-7970A39101DD}|MyWebsite\\MyWebsite.csproj|solutionrelative:mywebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FD4923-F1C1-46C2-A74F-7970A39101DD}|MyWebsite\\MyWebsite.csproj|d:\\hoctap\\c#4\\14_ps35026_nguyenthanhphuc_asm\\mywebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90FD4923-F1C1-46C2-A74F-7970A39101DD}|MyWebsite\\MyWebsite.csproj|solutionrelative:mywebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\appsettings.json",
+              "RelativeDocumentMoniker": "MyWebsite\\appsettings.json",
+              "ToolTip": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\appsettings.json",
+              "RelativeToolTip": "MyWebsite\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-22T08:47:35.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\Program.cs",
+              "RelativeDocumentMoniker": "MyWebsite\\Program.cs",
+              "ToolTip": "D:\\HocTap\\C#4\\14_PS35026_NguyenThanhPhuc_ASM\\MyWebsite\\Program.cs",
+              "RelativeToolTip": "MyWebsite\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T08:46:22.143Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

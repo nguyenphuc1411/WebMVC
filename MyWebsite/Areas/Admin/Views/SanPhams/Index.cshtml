@@ -1,0 +1,100 @@
+﻿@model IEnumerable<MyWebsite.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Index</h1>
+
+<partial name="_notificationPartial"></partial>
+
+<div class="d-flex justify-content-sm-between">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+    
+    <partial name="_searchResultPartial"></partial>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Serial</th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenSanPham)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GiamGia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HinhAnh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhMuc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int index = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSanPham)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiamGia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kho)
+                </td>
+                <td>
+                    <img src="~/Images/SanPham/@item.HinhAnh"  style="height:50px;"/>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DanhMuc!.TenDanhMuc)
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.SanPhamId">Edit</a> |
+
+                    @* Modal Delete *@
+                    <button type="button" class="btn btn-sm btn-danger" 
+                        data-bs-toggle="modal" data-bs-target="#modal-@item.SanPhamId">Delete</button>
+
+
+                    <div class="modal fade" id="modal-@item.SanPhamId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header row">
+                                    <h1 class="modal-title fs-5 col-9" id="exampleModalLabel">@item.TenSanPham</h1>
+                                    <img class="col-2" src="~/Images/SanPham/@item.HinhAnh" style="height:60px;" />
+                                    <button type="button" class="btn-close col-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="text-danger">Are you sure delete this Product?</h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <a asp-action="Delete" asp-route-id="@item.SanPhamId" class="btn btn-primary">Delete Confirm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+           index++;
+        }
+    </tbody>
+</table>
+
